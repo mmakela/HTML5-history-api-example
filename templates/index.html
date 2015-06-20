@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block body %}
+    <div id="wrapper">
+        <div id="content">
+            <div id="header">
+                <h1>pushState / popState</h1>
+            </div>
+            <div id="navigation">
+                <div id="timer">1</div>
+                <ul>
+                    <li><a href="/" title="You Get What You Give">You Get What You Give</a></li>
+                    <li><a href="/fortune-faded" title="Fortune Faded">Fortune Faded</a></li>
+                    <li><a href="/liar" title="Liar">Liar</a></li>
+                    <li><a href="/universal" title="Universal">Universal</a></li>
+                </ul>
+            </div>
+            <div id="container">
+                <div id="left">{% include column_template %}</div>
+                <div id="right">{% include content_template %}</div>
+            </div>
+        </div>
+        <div class="clearer"></div>
+    </div>
+{% endblock %}
